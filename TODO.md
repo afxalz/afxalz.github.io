@@ -1,13 +1,17 @@
 # Todo for the website
 
-* Add github links beside the Project name.
+* Home page
+  - Edit the intro.
+  - Change picture.
 
-* Update CV
+* Projects page
+  - Add 4i project, BTP project.
+  - Keep projets in chronological order
 
-  * Change the font.
+* Add Exp page
+  - Add content on canada and shashtri
+  - Add content on avanti program
+  - Add content on Robotics Club
 
-  * Add content
-
-  * POR, revisit
 
     

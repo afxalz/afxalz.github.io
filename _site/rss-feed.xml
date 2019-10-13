@@ -7,6 +7,27 @@
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>ARLE</title>
+				
+					<dc:creator>Afzal Ahmad</dc:creator>
+				
+				
+					<description>&lt;p&gt;&lt;strong&gt;Autonomous Robot for Library Enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+This project is a part of the &lt;a href=&quot;https://www.youtube.com/watch?v=QdKhtsYo7OM&quot;&gt;&lt;b&gt;4i Lab&lt;/b&gt;&lt;/a&gt; initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library.  
+&lt;/p&gt;
+&lt;p&gt;
+I worked on creating a path planning algoithm and integrating the ROS-based control pipeline. We used a 2d-lidar based mapping algorithm to create an initial map of the library environment. The robot is able to recognise the RFID of the book and guide the reader to the shelf. It uses a online path planner to avoid any static or dynamic obstacles such as other readers moving inside the library.
+&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
+				<link>http://localhost:4000/projects/arle.html</link>
+				<guid isPermaLink="true">http://localhost:4000/projects/arle.html</guid>
+			</item>
+		
+			<item>
 				<title>HIVE</title>
 				
 					<dc:creator>Afzal Ahmad</dc:creator>
@@ -19,7 +40,7 @@ I along with two undergraduate students worked on a swarm of robots under the gu
 
 </description>
 				
-				<pubDate>Sun, 05 Aug 2018 00:00:00 +0530</pubDate>
+				<pubDate>Sun, 05 Aug 2018 00:00:00 +0200</pubDate>
 				<link>http://localhost:4000/projects/hive.html</link>
 				<guid isPermaLink="true">http://localhost:4000/projects/hive.html</guid>
 			</item>
@@ -34,7 +55,7 @@ I along with two undergraduate students worked on a swarm of robots under the gu
 
 </description>
 				
-				<pubDate>Sun, 05 Aug 2018 00:00:00 +0530</pubDate>
+				<pubDate>Sun, 05 Aug 2018 00:00:00 +0200</pubDate>
 				<link>http://localhost:4000/projects/asroa.html</link>
 				<guid isPermaLink="true">http://localhost:4000/projects/asroa.html</guid>
 			</item>
