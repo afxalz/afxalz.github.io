@@ -1,11 +1,10 @@
 # Todo for the website
 
 * Home page
-  - Edit the intro.
   - Change picture.
 
 * Projects page
-  - Add 4i project, BTP project.
+  - BTP project.
   - Keep projets in chronological order
 
 * Add Exp page
