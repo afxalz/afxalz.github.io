@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-07T23:40:36+01:00</updated><id>http://localhost:4000/</id><title type="html">Afzal Ahmad</title><subtitle>in love with robots</subtitle><author><name></name></author><entry><title type="html">ARLE</title><link href="http://localhost:4000/projects/arle.html" rel="alternate" type="text/html" title="ARLE" /><published>2019-10-12T00:00:00+02:00</published><updated>2019-10-12T00:00:00+02:00</updated><id>http://localhost:4000/projects/arle</id><content type="html" xml:base="http://localhost:4000/projects/arle.html">&lt;p&gt;&lt;strong&gt;Autonomous Robot for Library Enhancement&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-24T23:48:39+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Afzal Ahmad</title><subtitle>in love with robots</subtitle><author><name></name></author><entry><title type="html">ARLE</title><link href="http://localhost:4000/projects/arle.html" rel="alternate" type="text/html" title="ARLE" /><published>2019-10-12T00:00:00+02:00</published><updated>2019-10-12T00:00:00+02:00</updated><id>http://localhost:4000/projects/arle</id><content type="html" xml:base="http://localhost:4000/projects/arle.html">&lt;p&gt;&lt;strong&gt;Autonomous Robot for Library Enhancement&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 This project is a part of the &lt;a href=&quot;https://www.youtube.com/watch?v=QdKhtsYo7OM&quot;&gt;&lt;b&gt;4i Lab&lt;/b&gt;&lt;/a&gt; initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library.  
 &lt;/p&gt;
@@ -12,63 +12,7 @@ I worked on creating a path planning algoithm and integrating the ROS-based cont
 &lt;div class=&quot;teamImage&quot; align=&quot;middle&quot;&gt;&lt;b&gt;My Team&lt;/b&gt;
 &lt;/div&gt;
 &lt;div class=&quot;teamImage&quot; align=&quot;middle&quot;&gt; &lt;img src=&quot;../assets/img/4i_team.jpg&quot; style=&quot;width:600px;height:400px;&quot; /&gt;  
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="4i" /><category term="4i Labs" /><category term="library" /><category term="arle" /><category term="librarybot" /><summary type="html">Autonomous Robot for Library Enhancement This project is a part of the 4i Lab initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library. I worked on creating a path planning algoithm and integrating the ROS-based control pipeline. We used a 2d-lidar based mapping algorithm to create an initial map of the library environment. The robot is able to recognise the RFID of the book and guide the reader to the shelf. It uses a online path planner to avoid any static or dynamic obstacles such as other readers moving inside the library.</summary></entry><entry><title type="html">HIVE</title><link href="http://localhost:4000/projects/hive.html" rel="alternate" type="text/html" title="HIVE" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>http://localhost:4000/projects/hive</id><content type="html" xml:base="http://localhost:4000/projects/hive.html">&lt;p&gt;&lt;strong&gt;Intelligent Swarm System&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/img/hive-2.jpg&quot; style=&quot;width:800px;height:350px;border-color: white&quot; border=&quot;4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Is it a Swarm system or a multi-robot system ?&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-As per the definitions coined by Zhong-yang ZHENG in his paper on Swarm Intelligence, Hive can be considered a Swarm system. All the robots in Hive are independent and homogeneous in all senses. There is no Master-Slave correspondence. The software design is robust to the number of robots in the group thus making the system easily extensible.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Collaborative Search&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A modified form of Particle Swarm Optimisation algorithm is implemented to perform an optimised search of the environment.The robots search their neighbouring environment for a particular type of stimuli and store information for Mapping.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rendezvous Algorithm&lt;/strong&gt;
-&lt;img src=&quot;../assets/img/hive-3.png&quot; style=&quot;float:right;width:440px;height:330px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-A custom designed rendezvous algorithm is used for successful aggregation of robots. The range sensors search for other objects in a local area around the robot. The robot then moves towards the closest object found. The decision is updated continuously which helps the robot in differentiating between a fellow bot and a passive object.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
-
-&lt;p&gt;The body of the robot was designed on SolidWorks CAD software and cut out of &lt;em&gt;4mm&lt;/em&gt; Plexi-glass sheet.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Electronics&lt;/strong&gt;
-&lt;img src=&quot;../assets/img/hive-4.jpg&quot; style=&quot;float:right;width:300px;height:350px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The robot is powered by &lt;em&gt;ATmega328u Micro-controller&lt;/em&gt;.&lt;br /&gt;
-Each of them is made of&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;2x Stepper DC motors&lt;/li&gt;
-  &lt;li&gt;6x Ultrasonic range sensors&lt;/li&gt;
-  &lt;li&gt;2x Motor driver modules&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
-
-&lt;div class=&quot;imgcap&quot;&gt;
-&lt;div align=&quot;middle&quot;&gt;
-&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Testing the range sensors&lt;/b&gt; &lt;/div&gt;
-&lt;iframe width=&quot;600&quot; height=&quot;350&quot; src=&quot;https://www.youtube.com/embed/bafYjByexFc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Rendezvous demonstration&lt;/b&gt; &lt;/div&gt;
-&lt;iframe width=&quot;620px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube.com/embed/POwtcVPyVss?rel=0&amp;amp;controls=1&amp;amp;utoplay=1&amp;amp;loop=1&amp;amp;rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="swarm" /><category term="hive" /><summary type="html">Intelligent Swarm System I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.</summary></entry><entry><title type="html">ASROA</title><link href="http://localhost:4000/projects/asroa.html" rel="alternate" type="text/html" title="ASROA" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>http://localhost:4000/projects/asroa</id><content type="html" xml:base="http://localhost:4000/projects/asroa.html">&lt;h2 id=&quot;autonomous-snake-robot-for-obstacle-avoidance&quot;&gt;Autonomous Snake Robot for Obstacle Avoidance&lt;/h2&gt;
+&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="4i" /><category term="4i Labs" /><category term="library" /><category term="arle" /><category term="librarybot" /><summary type="html">Autonomous Robot for Library Enhancement This project is a part of the 4i Lab initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library. I worked on creating a path planning algoithm and integrating the ROS-based control pipeline. We used a 2d-lidar based mapping algorithm to create an initial map of the library environment. The robot is able to recognise the RFID of the book and guide the reader to the shelf. It uses a online path planner to avoid any static or dynamic obstacles such as other readers moving inside the library.</summary></entry><entry><title type="html">ASROA</title><link href="http://localhost:4000/projects/asroa.html" rel="alternate" type="text/html" title="ASROA" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>http://localhost:4000/projects/asroa</id><content type="html" xml:base="http://localhost:4000/projects/asroa.html">&lt;h2 id=&quot;autonomous-snake-robot-for-obstacle-avoidance&quot;&gt;Autonomous Snake Robot for Obstacle Avoidance&lt;/h2&gt;
 
 &lt;p&gt;Nature has inspired many robot designs. Some of the best examples include &lt;a href=&quot;http://news.mit.edu/2015/cheetah-robot-lands-running-jump-0529&quot;&gt;Cheetah&lt;/a&gt;, &lt;a href=&quot;https://www.bostondynamics.com/wildcat&quot;&gt;WildCat&lt;/a&gt; and &lt;a href=&quot;http://biorobotics.ri.cmu.edu/projects/modsnake/&quot;&gt;Modular Snake Robot&lt;/a&gt;. Learning about the environment and reacting to it has been a major part of research on these robots.&lt;/p&gt;
 
@@ -149,4 +93,60 @@ Output of network: “c” value for current time-stamp.&lt;br /&gt;
 &lt;div id=&quot;pdf&quot;&gt;
 &lt;iframe class=&quot;scribd_iframe_embed&quot; title=&quot;asroa&quot; src=&quot;https://www.scribd.com/embeds/385489123/content?start_page=1&amp;amp;view_mode=scroll&amp;amp;access_key=key-pd7T40nAx8ISK9CaSAvZ&amp;amp;show_recommendations=true&quot; data-auto-height=&quot;false&quot; data-aspect-ratio=&quot;0.7068965517241379&quot; scrolling=&quot;no&quot; id=&quot;doc_57066&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="snake-robot" /><summary type="html">Autonomous Snake Robot for Obstacle Avoidance</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="snake-robot" /><summary type="html">Autonomous Snake Robot for Obstacle Avoidance</summary></entry><entry><title type="html">HIVE</title><link href="http://localhost:4000/projects/hive.html" rel="alternate" type="text/html" title="HIVE" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>http://localhost:4000/projects/hive</id><content type="html" xml:base="http://localhost:4000/projects/hive.html">&lt;p&gt;&lt;strong&gt;Intelligent Swarm System&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/img/hive-2.jpg&quot; style=&quot;width:800px;height:350px;border-color: white&quot; border=&quot;4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Is it a Swarm system or a multi-robot system ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+As per the definitions coined by Zhong-yang ZHENG in his paper on Swarm Intelligence, Hive can be considered a Swarm system. All the robots in Hive are independent and homogeneous in all senses. There is no Master-Slave correspondence. The software design is robust to the number of robots in the group thus making the system easily extensible.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Collaborative Search&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A modified form of Particle Swarm Optimisation algorithm is implemented to perform an optimised search of the environment.The robots search their neighbouring environment for a particular type of stimuli and store information for Mapping.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rendezvous Algorithm&lt;/strong&gt;
+&lt;img src=&quot;../assets/img/hive-3.png&quot; style=&quot;float:right;width:440px;height:330px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+A custom designed rendezvous algorithm is used for successful aggregation of robots. The range sensors search for other objects in a local area around the robot. The robot then moves towards the closest object found. The decision is updated continuously which helps the robot in differentiating between a fellow bot and a passive object.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+
+&lt;p&gt;The body of the robot was designed on SolidWorks CAD software and cut out of &lt;em&gt;4mm&lt;/em&gt; Plexi-glass sheet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Electronics&lt;/strong&gt;
+&lt;img src=&quot;../assets/img/hive-4.jpg&quot; style=&quot;float:right;width:300px;height:350px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The robot is powered by &lt;em&gt;ATmega328u Micro-controller&lt;/em&gt;.&lt;br /&gt;
+Each of them is made of&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2x Stepper DC motors&lt;/li&gt;
+  &lt;li&gt;6x Ultrasonic range sensors&lt;/li&gt;
+  &lt;li&gt;2x Motor driver modules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
+
+&lt;div class=&quot;imgcap&quot;&gt;
+&lt;div align=&quot;middle&quot;&gt;
+&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Testing the range sensors&lt;/b&gt; &lt;/div&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;350&quot; src=&quot;https://www.youtube.com/embed/bafYjByexFc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Rendezvous demonstration&lt;/b&gt; &lt;/div&gt;
+&lt;iframe width=&quot;620px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube.com/embed/POwtcVPyVss?rel=0&amp;amp;controls=1&amp;amp;utoplay=1&amp;amp;loop=1&amp;amp;rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="swarm" /><category term="hive" /><summary type="html">Intelligent Swarm System I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.</summary></entry></feed>
