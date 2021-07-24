@@ -23,8 +23,8 @@ I worked on creating a path planning algoithm and integrating the ROS-based cont
 </description>
 				
 				<pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
-				<link>http://localhost:4000/projects/arle.html</link>
-				<guid isPermaLink="true">http://localhost:4000/projects/arle.html</guid>
+				<link>/projects/arle.html</link>
+				<guid isPermaLink="true">/projects/arle.html</guid>
 			</item>
 		
 			<item>
@@ -41,8 +41,8 @@ I along with two undergraduate students worked on a swarm of robots under the gu
 </description>
 				
 				<pubDate>Sun, 05 Aug 2018 00:00:00 +0200</pubDate>
-				<link>http://localhost:4000/projects/hive.html</link>
-				<guid isPermaLink="true">http://localhost:4000/projects/hive.html</guid>
+				<link>/projects/hive.html</link>
+				<guid isPermaLink="true">/projects/hive.html</guid>
 			</item>
 		
 			<item>
@@ -56,8 +56,8 @@ I along with two undergraduate students worked on a swarm of robots under the gu
 </description>
 				
 				<pubDate>Sun, 05 Aug 2018 00:00:00 +0200</pubDate>
-				<link>http://localhost:4000/projects/asroa.html</link>
-				<guid isPermaLink="true">http://localhost:4000/projects/asroa.html</guid>
+				<link>/projects/asroa.html</link>
+				<guid isPermaLink="true">/projects/asroa.html</guid>
 			</item>
 		
 	</channel>
