@@ -1,152 +1,379 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-24T23:58:26+02:00</updated><id>/feed.xml</id><title type="html">Afzal Ahmad</title><subtitle>in love with robots</subtitle><author><name></name></author><entry><title type="html">ARLE</title><link href="/projects/arle.html" rel="alternate" type="text/html" title="ARLE" /><published>2019-10-12T00:00:00+02:00</published><updated>2019-10-12T00:00:00+02:00</updated><id>/projects/arle</id><content type="html" xml:base="/projects/arle.html">&lt;p&gt;&lt;strong&gt;Autonomous Robot for Library Enhancement&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-This project is a part of the &lt;a href=&quot;https://www.youtube.com/watch?v=QdKhtsYo7OM&quot;&gt;&lt;b&gt;4i Lab&lt;/b&gt;&lt;/a&gt; initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library.  
-&lt;/p&gt;
-&lt;p&gt;
-I worked on creating a path planning algoithm and integrating the ROS-based control pipeline. We used a 2d-lidar based mapping algorithm to create an initial map of the library environment. The robot is able to recognise the RFID of the book and guide the reader to the shelf. It uses a online path planner to avoid any static or dynamic obstacles such as other readers moving inside the library.
-&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-06T23:18:15+00:00</updated><id>http://0.0.0.0:8080/feed.xml</id><title type="html">Afzal Ahmad</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">a post with jupyter notebook</title><link href="http://0.0.0.0:8080/sample-posts/jupyter-notebook/2023/07/04/jupyter-notebook.html" rel="alternate" type="text/html" title="a post with jupyter notebook" /><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/jupyter-notebook/2023/07/04/jupyter-notebook</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/jupyter-notebook/2023/07/04/jupyter-notebook.html"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p>
 
-&lt;iframe width=&quot;800&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/51S_pQePftE&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+    {% jupyter_notebook jupyter_path %}
+{% else %}
+    <span class="nt">&lt;p&gt;</span>Sorry, the notebook you are looking for does not exist.<span class="nt">&lt;/p&gt;</span>
+{% endif %}
+{:/nomarkdown}
+</code></pre></div></div>
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;teamImage&quot; align=&quot;middle&quot;&gt;&lt;b&gt;My Team&lt;/b&gt;
-&lt;/div&gt;
-&lt;div class=&quot;teamImage&quot; align=&quot;middle&quot;&gt; &lt;img src=&quot;../assets/img/4i_team.jpg&quot; style=&quot;width:600px;height:400px;&quot; /&gt;  
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="4i" /><category term="4i Labs" /><category term="library" /><category term="arle" /><category term="librarybot" /><summary type="html">Autonomous Robot for Library Enhancement This project is a part of the 4i Lab initiative of IIT(Indian Institute of Technology) Guwahati to enable students to create novel solutions for real-world problems using state-of-the-art technology. I along with a group of students worked on the project to complete the first version of the robot capable of book identification and autonomous navigation inside the institute library. It is designed to help the library staff as well as the readers in efficient and immediate management of the library. I worked on creating a path planning algoithm and integrating the ROS-based control pipeline. We used a 2d-lidar based mapping algorithm to create an initial map of the library environment. The robot is able to recognise the RFID of the book and guide the reader to the shelf. It uses a online path planner to avoid any static or dynamic obstacles such as other readers moving inside the library.</summary></entry><entry><title type="html">ASROA</title><link href="/projects/asroa.html" rel="alternate" type="text/html" title="ASROA" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>/projects/asroa</id><content type="html" xml:base="/projects/asroa.html">&lt;h2 id=&quot;autonomous-snake-robot-for-obstacle-avoidance&quot;&gt;Autonomous Snake Robot for Obstacle Avoidance&lt;/h2&gt;
+<p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p>
 
-&lt;p&gt;Nature has inspired many robot designs. Some of the best examples include &lt;a href=&quot;http://news.mit.edu/2015/cheetah-robot-lands-running-jump-0529&quot;&gt;Cheetah&lt;/a&gt;, &lt;a href=&quot;https://www.bostondynamics.com/wildcat&quot;&gt;WildCat&lt;/a&gt; and &lt;a href=&quot;http://biorobotics.ri.cmu.edu/projects/modsnake/&quot;&gt;Modular Snake Robot&lt;/a&gt;. Learning about the environment and reacting to it has been a major part of research on these robots.&lt;/p&gt;
+<p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p>
 
-&lt;p&gt;This project is an attempt to make a simple-to-build snake robot that can learn to avoid obstacles. I along with another undergrad worked on this project under the guidance of &lt;strong&gt;Dr. Prithwijit Guha&lt;/strong&gt; at Indian Institute of Technology Guwahati. You can read the detailed report &lt;a href=&quot;#pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-problem-statment&quot;&gt;The problem statment&lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-	The snake has several types of moving techniques including side-winding, serpentine and rectilinear motion. We focus our work on serpentine motion as it can use obstacles as suppport to move along. The serpentine motion is goverened by a controller that takes in several parameters as input. Given these parameters one can generate a variety of motion from the snake. But these parameters have to be manually tuned for a certain type of motion. Taking inspiration from a real snake, we try to move the snake through an obstacle filled map. This will require the snake to change it's motion depending upon the sensor data from the environment. We proppose that this sensor data along with the knowledge of the previous move can be used to predict the upcoming moves for the robot. 
-&lt;/p&gt;
 
-&lt;h2 id=&quot;approach-used&quot;&gt;Approach used&lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-	As there was no open source design available for our snake robot, we start our work with designing a simulated snake robot for training and testing our algorithms. We designed our robot using V-rep simulation software. We further tune the simulated robot by changing the design parameters. 
-	We also need a global path planner to achieve autonomous navigation in an obstacle map. We use watershed algorithm to solve this problem. The approach is similar to vornoi diagrams that generates several possible paths through a given map. These are then used by the snake robot to generate data.
-&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/img/asroa-2.png&quot; style=&quot;float:right;width:350px;height:300px;border-color: white&quot; border=&quot;4&quot; /&gt;&lt;/p&gt;
+    <div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/blog.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>
 
-&lt;p&gt;We propose the following approaches to design a predictive model for our robot.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finding correlation between sensor data and control parameters of the serpenoid curve using k-means clustering.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Using ARMA model to predict the control parameters by treating it as a time series.(signal processing based approach)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Using a recurrent neural network to predict control parameters (machine learning based approach)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;h2 id=&quot;simulation&quot;&gt;Simulation&lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-	The snake and it's environment is designed on the Virtual Robot Experimentation Platform (V-rep). The design of the robot is based on the available material and components required to make a real robot. This will make it easier to reproduce the test results on a real snake robot. 
-	&lt;div style=&quot;float:left;margin:0 10px 5px 0;&quot;&gt;
-		&lt;iframe width=&quot;441&quot; height=&quot;278&quot; src=&quot;https://www.youtube.com/embed/-zKmTJUTa3k&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
-		&lt;/iframe&gt;
-	&lt;/div&gt;
-The snake robot uses serpenoid curve as its control scheme. This serpenoid curve is used to generate serpentine motion in the robot. The serpenoid curve was originally introduced by &lt;a href=&quot;https://dl.acm.org/citation.cfm?id=562623&quot;&gt;Hirose&lt;/a&gt; to approximate the the serpentine motion of a snake. We use the modified serpenoid curve.
-&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+<p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="jupyter-notebook" /><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="http://0.0.0.0:8080/sample-posts/blockquotes/2023/05/12/custom-blockquotes.html" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/blockquotes/2023/05/12/custom-blockquotes</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/blockquotes/2023/05/12/custom-blockquotes.html"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
 
-&lt;h2 id=&quot;path-planning&quot;&gt;Path Planning&lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-	&lt;img src=&quot;../assets/img/asroa-3.png&quot; style=&quot;float:right;width:350px;height:300px;border-color: white;margin:0 0 0 10px;&quot; border=&quot;4&quot; /&gt;  
-	We have used an image segmenting algorithm called watershed algorithm to segment the entire arena into sectors. The boundaries of these sectors have been taken as possible paths for the robot. Further details are mentioned in the report.
+<p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p>
 
-&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
+<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
+    <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
 
-&lt;h2 id=&quot;lstm-model&quot;&gt;LSTM Model&lt;/h2&gt;
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-&lt;p&gt;From our observaton made during the simualtion of the snake robot, we found that the the “c” value or the heading direction of the robot depends upon the previous configuration of the robot and the sensor data of the present time-stamp. Thus, we try to design a recurrent neural network using an LSTM cell to predict the “c” value from the sensor values and control paramters of previous time-stamp. We use a single layer of 50 neurons, each nueron being an LSTM cell.&lt;/p&gt;
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-&lt;p&gt;Input feature vector: 17 sensor values and “c” value from previous time-stamp 
-Output of network: “c” value for current time-stamp.&lt;br /&gt;
-&lt;strong&gt;Results:&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;Trainig Loss: 0.0019&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;Testing Loss: 0.0025&lt;/em&gt;&lt;/p&gt;
+  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
 
-&lt;p&gt;The results suggest that an LSTM model can be used for this problem.&lt;/p&gt;
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-&lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-&lt;div class=&quot;imgcap&quot;&gt;
-&lt;div align=&quot;middle&quot;&gt;
-&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Autonomous navigation using path planning&lt;/b&gt; &lt;/div&gt;
-&lt;iframe width=&quot;441&quot; height=&quot;278&quot; src=&quot;https://www.youtube.com/embed/W7V0BaGdjgE&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
 
-&lt;div id=&quot;pdf&quot;&gt;
-&lt;iframe class=&quot;scribd_iframe_embed&quot; title=&quot;asroa&quot; src=&quot;https://www.scribd.com/embeds/385489123/content?start_page=1&amp;amp;view_mode=scroll&amp;amp;access_key=key-pd7T40nAx8ISK9CaSAvZ&amp;amp;show_recommendations=true&quot; data-auto-height=&quot;false&quot; data-aspect-ratio=&quot;0.7068965517241379&quot; scrolling=&quot;no&quot; id=&quot;doc_57066&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="snake-robot" /><summary type="html">Autonomous Snake Robot for Obstacle Avoidance</summary></entry><entry><title type="html">HIVE</title><link href="/projects/hive.html" rel="alternate" type="text/html" title="HIVE" /><published>2018-08-05T00:00:00+02:00</published><updated>2018-08-05T00:00:00+02:00</updated><id>/projects/hive</id><content type="html" xml:base="/projects/hive.html">&lt;p&gt;&lt;strong&gt;Intelligent Swarm System&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.
-&lt;/p&gt;
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
+    <span class="p">}</span>
 
-&lt;p&gt;&lt;img src=&quot;../assets/img/hive-2.jpg&quot; style=&quot;width:800px;height:350px;border-color: white&quot; border=&quot;4&quot; /&gt;&lt;/p&gt;
+    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;p&gt;&lt;strong&gt;Is it a Swarm system or a multi-robot system ?&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-As per the definitions coined by Zhong-yang ZHENG in his paper on Swarm Intelligence, Hive can be considered a Swarm system. All the robots in Hive are independent and homogeneous in all senses. There is no Master-Slave correspondence. The software design is robust to the number of robots in the group thus making the system easily extensible.
-&lt;/p&gt;
+<p>A regular blockquote can be used as following:</p>
 
-&lt;h2 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h2&gt;
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
+<span class="gt">&gt; and it can be used as usual</span>
+</code></pre></div></div>
 
-&lt;p&gt;&lt;strong&gt;Collaborative Search&lt;/strong&gt;&lt;/p&gt;
+<blockquote>
+  <p>This is a regular blockquote
+and it can be used as usual</p>
+</blockquote>
 
-&lt;p&gt;A modified form of Particle Swarm Optimisation algorithm is implemented to perform an optimised search of the environment.The robots search their neighbouring environment for a particular type of stimuli and store information for Mapping.&lt;/p&gt;
+<p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p>
 
-&lt;p&gt;&lt;strong&gt;Rendezvous Algorithm&lt;/strong&gt;
-&lt;img src=&quot;../assets/img/hive-3.png&quot; style=&quot;float:right;width:440px;height:330px;&quot; /&gt;&lt;/p&gt;
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; A tip can be used when you want to give advice</span>
+<span class="gt">&gt; related to a certain content.</span>
+{: .block-tip }
+</code></pre></div></div>
 
-&lt;p style=&quot;text-align: justify;&quot;&gt;
-A custom designed rendezvous algorithm is used for successful aggregation of robots. The range sensors search for other objects in a local area around the robot. The robot then moves towards the closest object found. The decision is updated continuously which helps the robot in differentiating between a fellow bot and a passive object.
-&lt;/p&gt;
+<blockquote class="block-tip">
+  <h5 id="tip">TIP</h5>
 
-&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+  <p>A tip can be used when you want to give advice
+related to a certain content.</p>
+</blockquote>
 
-&lt;p&gt;The body of the robot was designed on SolidWorks CAD software and cut out of &lt;em&gt;4mm&lt;/em&gt; Plexi-glass sheet.&lt;/p&gt;
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; This is a warning, and thus should</span>
+<span class="gt">&gt; be used when you want to warn the user</span>
+{: .block-warning }
+</code></pre></div></div>
 
-&lt;p&gt;&lt;strong&gt;Electronics&lt;/strong&gt;
-&lt;img src=&quot;../assets/img/hive-4.jpg&quot; style=&quot;float:right;width:300px;height:350px;&quot; /&gt;&lt;/p&gt;
+<blockquote class="block-warning">
+  <h5 id="warning">WARNING</h5>
 
-&lt;p&gt;The robot is powered by &lt;em&gt;ATmega328u Micro-controller&lt;/em&gt;.&lt;br /&gt;
-Each of them is made of&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;2x Stepper DC motors&lt;/li&gt;
-  &lt;li&gt;6x Ultrasonic range sensors&lt;/li&gt;
-  &lt;li&gt;2x Motor driver modules&lt;/li&gt;
-&lt;/ul&gt;
+  <p>This is a warning, and thus should
+be used when you want to warn the user</p>
+</blockquote>
 
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; This is a danger zone, and thus should</span>
+<span class="gt">&gt; be used carefully</span>
+{: .block-danger }
+</code></pre></div></div>
 
-&lt;h2 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h2&gt;
+<blockquote class="block-danger">
+  <h5 id="danger">DANGER</h5>
 
-&lt;div class=&quot;imgcap&quot;&gt;
-&lt;div align=&quot;middle&quot;&gt;
-&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Testing the range sensors&lt;/b&gt; &lt;/div&gt;
-&lt;iframe width=&quot;600&quot; height=&quot;350&quot; src=&quot;https://www.youtube.com/embed/bafYjByexFc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;div class=&quot;thecap&quot; align=&quot;middle&quot;&gt;&lt;b&gt;Rendezvous demonstration&lt;/b&gt; &lt;/div&gt;
-&lt;iframe width=&quot;620px&quot; height=&quot;325px&quot; src=&quot;https://www.youtube.com/embed/POwtcVPyVss?rel=0&amp;amp;controls=1&amp;amp;utoplay=1&amp;amp;loop=1&amp;amp;rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name>Afzal Ahmad</name></author><category term="documentation" /><category term="projects" /><category term="swarm" /><category term="hive" /><summary type="html">Intelligent Swarm System I along with two undergraduate students worked on a swarm of robots under the guidance of Dr. Karuna Kalita at Indian Institute of Technology Guwahati. Hive (a name for collection of bees), is a group of autonomous robots designed to perform tasks in a collaborative and optimized manner. The robots are designed to search for objects in an indoor environment and assemble at a particular point. The focus of the project is on making a simple yet intelligent system of multiple robots that showcase Swarm Intelligence.</summary></entry></feed>
+  <p>This is a danger zone, and thus should
+be used carefully</p>
+</blockquote>]]></content><author><name></name></author><category term="sample-posts" /><category term="blockquotes" /><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry><entry><title type="html">a post with table of contents on a sidebar</title><link href="http://0.0.0.0:8080/sample-posts/toc/sidebar/2023/04/25/sidebar-table-of-contents.html" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/toc/sidebar/2023/04/25/sidebar-table-of-contents</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/toc/sidebar/2023/04/25/sidebar-table-of-contents.html"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
+
+<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
+
+<p>To add a table of contents to a post as a sidebar, simply add</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
+</code></pre></div></div>
+<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p>
+
+<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2>
+
+<p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p>
+
+<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">a post with audios</title><link href="http://0.0.0.0:8080/sample-posts/2023/04/25/audios.html" rel="alternate" type="text/html" title="a post with audios" /><published>2023-04-25T10:25:00+00:00</published><updated>2023-04-25T10:25:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/2023/04/25/audios</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/2023/04/25/audios.html"><![CDATA[<p>This is an example post with audios. It supports local audio files.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <audio src="/assets/audio/epicaly-short-113909.mp3" controls="" />
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <audio src="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls="" />
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="including" /><category term="audios" /><summary type="html"><![CDATA[this is what included audios could look like]]></summary></entry><entry><title type="html">a post with videos</title><link href="http://0.0.0.0:8080/sample-posts/2023/04/24/videos.html" rel="alternate" type="text/html" title="a post with videos" /><published>2023-04-24T21:01:00+00:00</published><updated>2023-04-24T21:01:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/2023/04/24/videos</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/2023/04/24/videos.html"><![CDATA[<p>This is an example post with videos. It supports local video files.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+
+  
+
+  <video src="/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" autoplay="" controls="" />
+
+  
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+
+  
+
+  <video src="/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" controls="" />
+
+  
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>
+
+<p>It does also support embedding videos from different sources. Here are some examples:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+
+  
+
+  <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto" />
+
+  
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+
+  
+
+  <iframe src="https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&amp;title=0&amp;byline=0&amp;portrait=0" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto" />
+
+  
+
+</figure>
+
+    </div>
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="including" /><category term="videos" /><summary type="html"><![CDATA[this is what included videos could look like]]></summary></entry><entry><title type="html">displaying beautiful tables with Bootstrap Tables</title><link href="http://0.0.0.0:8080/sample-posts/2023/03/20/tables.html" rel="alternate" type="text/html" title="displaying beautiful tables with Bootstrap Tables" /><published>2023-03-20T18:37:00+00:00</published><updated>2023-03-20T18:37:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/2023/03/20/tables</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/2023/03/20/tables.html"><![CDATA[<p>Using markdown to display tables is easy. Just use the following syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
+| :----------- | :------------: | ------------: |
+| Left 1       | center 1       | right 1       |
+| Left 2       | center 2       | right 2       |
+| Left 3       | center 3       | right 3       |
+</code></pre></div></div>
+
+<p>That will generate:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Left 1</td>
+      <td style="text-align: center">center 1</td>
+      <td style="text-align: right">right 1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Left 2</td>
+      <td style="text-align: center">center 2</td>
+      <td style="text-align: right">right 2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Left 3</td>
+      <td style="text-align: center">center 3</td>
+      <td style="text-align: right">right 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p></p>
+
+<p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/">Bootstrap Table</a>, loaded from a JSON file:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
+  <span class="na">id=</span><span class="s">"table"</span>
+  <span class="na">data-toggle=</span><span class="s">"table"</span>
+  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
+
+<table data-toggle="table" data-url="/assets/json/table_data.json">
+  <thead>
+    <tr>
+      <th data-field="id">ID</th>
+      <th data-field="name">Item Name</th>
+      <th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+</table>
+
+<p></p>
+
+<p>By using <a href="https://bootstrap-table.com/">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html">documentation</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
+  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
+  <span class="na">data-height=</span><span class="s">"460"</span>
+  <span class="na">data-pagination=</span><span class="s">"true"</span>
+  <span class="na">data-search=</span><span class="s">"true"</span>
+  <span class="na">data-toggle=</span><span class="s">"table"</span>
+  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
+
+<table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/assets/json/table_data.json">
+  <thead>
+    <tr>
+      <th data-checkbox="true"></th>
+      <th data-field="id" data-halign="left" data-align="center" data-sortable="true">ID</th>
+      <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Item Name</th>
+      <th data-field="price" data-halign="right" data-align="left" data-sortable="true">Item Price</th>
+    </tr>
+  </thead>
+</table>]]></content><author><name></name></author><category term="sample-posts" /><summary type="html"><![CDATA[an example of how to use Bootstrap Tables]]></summary></entry><entry><title type="html">a post with table of contents</title><link href="http://0.0.0.0:8080/sample-posts/toc/2023/03/20/table-of-contents.html" rel="alternate" type="text/html" title="a post with table of contents" /><published>2023-03-20T15:59:00+00:00</published><updated>2023-03-20T15:59:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/toc/2023/03/20/table-of-contents</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/toc/2023/03/20/table-of-contents.html"><![CDATA[<p>This post shows how to add a table of contents in the beginning of the post.</p>
+
+<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
+
+<p>To add a table of contents to a post, simply add</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="na">beginning</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post.</p>
+
+<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h2 id="table-of-contents-options">Table of Contents Options</h2>
+
+<p>If you want to learn more about how to customize the table of contents, you can check the <a href="https://github.com/toshimaru/jekyll-toc">jekyll-toc</a> repository.</p>
+
+<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+
+<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
+
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><summary type="html"><![CDATA[an example of a blog post with table of contents]]></summary></entry><entry><title type="html">a post with giscus comments</title><link href="http://0.0.0.0:8080/sample-posts/external-services/2022/12/10/giscus-comments.html" rel="alternate" type="text/html" title="a post with giscus comments" /><published>2022-12-10T15:59:00+00:00</published><updated>2022-12-10T15:59:00+00:00</updated><id>http://0.0.0.0:8080/sample-posts/external-services/2022/12/10/giscus-comments</id><content type="html" xml:base="http://0.0.0.0:8080/sample-posts/external-services/2022/12/10/giscus-comments.html"><![CDATA[<p>This post shows how to add GISCUS comments.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="external-services" /><summary type="html"><![CDATA[an example of a blog post with giscus comments]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="http://0.0.0.0:8080/2022/04/23/displaying-external-posts-on-your-al-folio-blog.html" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>http://0.0.0.0:8080/2022/04/23/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="http://0.0.0.0:8080/2022/04/23/displaying-external-posts-on-your-al-folio-blog.html"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">a post with redirect</title><link href="http://0.0.0.0:8080/2022/02/01/redirect.html" rel="alternate" type="text/html" title="a post with redirect" /><published>2022-02-01T17:39:00+00:00</published><updated>2022-02-01T17:39:00+00:00</updated><id>http://0.0.0.0:8080/2022/02/01/redirect</id><content type="html" xml:base="http://0.0.0.0:8080/2022/02/01/redirect.html"><![CDATA[<p>Redirecting to another page.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[you can also redirect to assets like pdf]]></summary></entry></feed>
