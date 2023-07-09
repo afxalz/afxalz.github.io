@@ -1,2 +1,15 @@
+# al-folio theme and build files
+_site
+.bundle
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.DS_store
+.ruby-version
+.tweet-cache
+Gemfile.lock
+vendor
+
+# vim swap files
 *.swp
 *.*.swp
