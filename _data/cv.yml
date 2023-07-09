@@ -20,6 +20,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Fellow 
+      institution: Multi-Robot Systems Lab, Prague, Czech Republic
+      year: 2022 - Present
+      description:
+        - Designing a simulator for learning high-speed, safe flight for a swarm of UAVs.
+        - Improving and maintaining existing open-source libraries and code-base for other projects.
+
     - title: Research Assistant
       institution: Multi-Robot Systems Lab, Prague, Czech Republic
       year: 2019 - 2022
