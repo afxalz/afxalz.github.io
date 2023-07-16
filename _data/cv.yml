@@ -70,10 +70,10 @@
   contents:
     - year: 2022
       items: 
-        - Top 6 masters thesis in Cena Wernera von Siemense awards under the Industry 4.0 category.
+        - <b> Top 6 </b> masters thesis in <b> Cena Wernera von Siemense awards </b> under the Industry 4.0 category.
     - year: 2018
       items: 
-        - Shastri Research Student Fellowship for undergraduate research in Canada.
+        - Shastri Research Student Fellowship for undergraduate research in <b> Canada </b>.
 
 # - title: Academic Interests
 #   type: nested_list
