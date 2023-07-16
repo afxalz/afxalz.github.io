@@ -1,0 +1,93 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Afzal Ahmad
+    - name: Languages
+      value: English, Hindi, Urdu, Ukranian (on the way)
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Masters of Science (M.Sc.) in Artificial Intelligence
+      institution: Czech Technical University in Prague, Czech Republic
+      year: 2022
+
+    - title: Bachelor of Technology (B.Tech.)
+      institution: Indian Institute of Technology (IIT) Guwahati, India
+      year: 2019
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Fellow 
+      institution: Multi-Robot Systems Lab, Prague, Czech Republic
+      year: 2022 - Present
+      description:
+        - Designing a simulator for learning high-speed, safe flight for a swarm of UAVs.
+        - Improving and maintaining existing open-source libraries and code-base for other projects.
+
+    - title: Research Assistant
+      institution: Multi-Robot Systems Lab, Prague, Czech Republic
+      year: 2019 - 2022
+      description:
+        - Designing decentralised control algorithms for a swarm of UAVs using virtual potential field approach.
+        - Focus on self-organised flocking and path planning in an obstacle-rich environment (forests).
+
+    - title: Undergraduate Researcher
+      institution: Indian Institute of Technology (IIT) Guwahati, India
+      year: 2018 - 2019
+      description:
+        - Introduced a path planning method based on rapidly exploring random tree (RRT) algorithm for UAV navigation in an obstacle-rich urban environment.
+        - Introduced a framework for cooperative locomotion of a decentralised group of UAVs using the newpath planning approach.
+
+    - title: Research Intern
+      institution: MIST Lab, Polytechnique Montreal, Canada
+      year: 2018
+      description:
+        - Developed a ROS based architecture for path planning and control of multi-UAV systems.
+        - Developed a framework for long term autonomy of a multi-robot system using adaptive locomotion.
+
+    - title: Undergraduate Researcher
+      institution: Indian Institute of Technology (IIT) Guwahati, India
+      year: 2017
+      description:
+        - Developed a model-based learning technique for locomotion of a nonholonomic snake robot (ASROA).
+        - Used the learned model to implement obstacle avoidance in a simulated environment
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/afxalz/ARLE">ARLE</a>
+      year: 2017 - 2019
+      description: Autonomous robot for library enhancement.
+    - title: <a href="https://github.com/afxalz/HIVE">HIVE</a>
+      year: 2016 - 2017
+      description: Distributed swarm system.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - <b> Top 6 </b> masters thesis in <b> Cena Wernera von Siemense awards </b> under the Industry 4.0 category.
+    - year: 2018
+      items: 
+        - Shastri Research Student Fellowship for undergraduate research in <b> Canada </b>.
+
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
