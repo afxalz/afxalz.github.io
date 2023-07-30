@@ -26,3 +26,5 @@ My masters thesis focused on investigating multi-UAV trajectory planning with li
 
 Prior to this, I obtained a Bachelor's in Electronics and Electrical Engineering from the [Indian Institute of Technology (IIT) Guwahati](https://www.iitg.ac.in/) in 2019.
 As an undergraduate researcher, I worked on simulating a swarm of ground robots at the [MIST lab](http://mistlab.ca/), Polytechnique Montreal, Canada.
+
+I have reviewed articles for [IROS 2023](https://ieee-iros.org/), [ICRA 2021](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra) and [2023](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra), [ICUAS 2021](https://uasconferences.com/) and [Bioinspiration & Biomimetics](https://iopscience.iop.org/journal/1748-3190) journal.
