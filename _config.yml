@@ -232,6 +232,7 @@ exclude:
   - vendor
   - _pages/repositories.md
   - _includes/repository/
+  - _news/old/
 keep_files:
   - CNAME
   - .nojekyll
