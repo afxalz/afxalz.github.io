@@ -25,15 +25,13 @@ latest_posts:
 
 ---
 
-I am Research Fellow at the [Multi-Robot Systems lab](http://mrs.felk.cvut.cz/) in Czech Technical University in Prague, Czech Republic.
-I have been working on multi-robot coordination for high speed flights in cluttered environments.
-My work in supervised of [Dr. Martin Saska](http://mrs.felk.cvut.cz/members/martin-saska).
+I am a first-year doctoral student at the [Multi-Robot Systems lab](https://mrs.fel.cvut.cz/) in the Czech Technical University in Prague, Czech Republic.
+I have been working on multi-robot, cooperative task planning for long-horizon tasks (multiple days).
+My broader research interests lie in multi-robot decision-making, especially in decentralized mechanisms, and in cooperative and non-cooperative Game Theory.
+Previously, I have worked on decentralized control for swarms and cooperation under limited information.
+My work is supervised by [Dr. Martin Saska](https://mrs.fel.cvut.cz/members/martin-saska).
 
-I graduated with a Master's in Artificial Intelligence from the [Czech Technical University in Prague](https://oi.fel.cvut.cz/en/) in 2022.
-During my masters I have worked on decentralized control of multi-UAV systems under the supervision of [Dr. Martin Saska](http://mrs.felk.cvut.cz/members/martin-saska).
-My masters thesis focused on investigating multi-UAV trajectory planning with limited to no information sharing among the UAVs.
+Before starting my doctoral studies, I worked at [Fly4Future](https://fly4future.com/) as a research engineer, where I developed mission-planning algorithms for searching large geographic areas using multiple UAVs.
+I have previous research experience working under [Dr. Martin Saska](https://mrs.fel.cvut.cz/members/martin-saska) at [Multi-Robot Systems lab](https://mrs.fel.cvut.cz/) and  [Dr. Giovanni Beltrame](https://mistlab.ca/people/beltrame/) at [MIST lab](https://mistlab.ca/), Polytechnique Montreal, Canada.
 
-Prior to this, I obtained a Bachelor's in Electronics and Electrical Engineering from the [Indian Institute of Technology (IIT) Guwahati](https://www.iitg.ac.in/) in 2019.
-As an undergraduate researcher, I worked on simulating a swarm of ground robots at the [MIST lab](http://mistlab.ca/), Polytechnique Montreal, Canada.
-
-I have reviewed articles for [IROS 2023](https://ieee-iros.org/), [ICRA 2021](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra) and [2023](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra), [ICUAS 2021](https://uasconferences.com/) and [Bioinspiration & Biomimetics](https://iopscience.iop.org/journal/1748-3190) journal.
+I have reviewed articles for [RA-L](https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=7083369), [IROS](https://ieee-iros.org/), [ICRA](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra), and [Bioinspiration & Biomimetics](https://iopscience.iop.org/journal/1748-3190) journal.
