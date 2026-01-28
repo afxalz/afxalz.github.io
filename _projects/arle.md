@@ -3,7 +3,6 @@ layout: page
 title: "ARLE"
 category: fun
 importance: 1
-tags: [fun]
 projectlink: https://github.com/afzalhmd14/ARLE
 img: assets/img/projects/arle_thumbnail.jpg
 ---
