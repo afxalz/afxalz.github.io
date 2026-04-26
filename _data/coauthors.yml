@@ -1,3 +1,4 @@
-"Saska":
-  - firstname: ["Martin", "M.", "M. S.", "Martin"]
-    url: http://mrs.felk.cvut.cz/members/martin-saska
+---
+Saska:
+  - firstname: [Martin, M., M. S., Martin]
+    url: https://mrs.fel.cvut.cz/members/martin-saska
